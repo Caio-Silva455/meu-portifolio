@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sites profissionais em Vila Velha com Caio Silva. Soluções de alto impacto."
+    />
+    <title>Serviços — Caio Silva</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: "#1d8cf8",
+              dark: "#0c1220",
+              darker: "#060a13",
+            },
+            fontFamily: {
+              oxanium: ["Oxanium", "sans-serif"],
+              dm: ["DM Sans", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "DM Sans", sans-serif;
+        background-color: #060a13;
+        color: white;
+      }
+      .title-font {
+        font-family: "Oxanium", sans-serif;
+      }
+      .custom-scroll::-webkit-scrollbar { height: 4px; }
+      .custom-scroll::-webkit-scrollbar-thumb { background: #1d8cf8; border-radius: 10px; }
+    </style>
+  </head>
+  <body class="bg-darker text-gray-200 overflow-x-hidden">
+    <nav class="fixed top-0 w-full z-50 bg-dark/80 backdrop-blur-md border-b border-white/10">
+      <div class="max-w-7xl mx-auto px-4 md:px-6 h-16 md:h-20 flex items-center justify-between">
+        <div class="title-font text-xl md:text-2xl font-extrabold tracking-tighter italic">
+          CAIO<span class="text-brand">.</span>SILVA
+        </div>
+        <div class="hidden md:flex items-center gap-6 lg:gap-8 font-medium text-sm">
+          <a href="../index.html" class="hover:text-brand transition">Home</a>
+          <a href="curriculo.html" class="hover:text-brand transition">Currículo</a>
+          <a href="github.html" class="hover:text-brand transition">GitHub</a>
+          <a href="servicos.html" class="text-brand">Serviços</a>
+          <a href="contato.html" class="bg-brand hover:bg-blue-600 text-white px-5 py-2 rounded-full transition shadow-lg shadow-brand/20">Contato</a>
+        </div>
+        <div class="md:hidden text-brand text-[10px] font-bold uppercase tracking-widest">Menu</div>
+      </div>
+    </nav>
+
+    <main class="pt-24 md:pt-32 pb-20">
+      <section class="max-w-7xl mx-auto px-4 md:px-6 text-center mb-16 md:mb-20">
+        <span class="text-brand font-bold tracking-widest uppercase text-xs md:text-sm">O que eu faço</span>
+        <h1 class="title-font text-3xl sm:text-4xl md:text-6xl font-extrabold mt-4 mb-6 leading-tight">
+          Soluções Digitais
+          <span class="text-brand italic">de Alta Performance</span>
+        </h1>
+        <p class="text-gray-400 max-w-2xl mx-auto text-sm md:text-lg">
+          Transformo a presença digital do seu negócio com tecnologias modernas como React, Java e Node.js.
+        </p>
+      </section>
+
+      <section class="max-w-7xl mx-auto px-4 md:px-6 mb-24 md:mb-32">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+          
+          <article class="bg-white/5 border border-white/10 p-6 md:p-8 rounded-3xl hover:border-brand/50 transition-all group order-2 md:order-1">
+            <div class="text-3xl md:text-4xl mb-6">&#x1F331;</div>
+            <h3 class="title-font text-xl md:text-2xl font-bold mb-2 text-white">Essencial</h3>
+            <p class="text-gray-500 mb-6 italic text-xs md:text-sm">Ideal para autônomos.</p>
+            <div class="text-3xl md:text-4xl font-bold title-font mb-8 text-white">R$350</div>
+            <ul class="space-y-4 mb-10 text-gray-400 text-xs md:text-sm">
+              <li class="flex items-center gap-2 font-medium">&#x2714; Design Responsivo</li>
+              <li class="flex items-center gap-2 font-medium">&#x2714; Hospedagem inclusa</li>
+              <li class="flex items-center gap-2 font-medium">&#x2714; 1-2 Páginas</li>
+            </ul>
+            <a href="contato.html" class="block text-center py-3 border border-white/10 rounded-xl hover:bg-white/5 transition font-bold text-sm">Contratar</a>
+          </article>
+
+          <article class="bg-brand/10 border-2 border-brand p-8 md:p-10 rounded-[2rem] relative shadow-2xl shadow-brand/10 md:scale-105 z-10 order-1 md:order-2">
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand text-white text-[9px] md:text-[10px] font-black px-4 py-1 rounded-full tracking-widest uppercase">Mais Popular</div>
+            <div class="text-3xl md:text-4xl mb-6">&#x1F680;</div>
+            <h3 class="title-font text-xl md:text-2xl font-bold mb-2 text-white">Business</h3>
+            <p class="text-brand/80 mb-6 italic font-medium text-xs md:text-sm">O melhor para empresas.</p>
+            <div class="text-3xl md:text-4xl font-bold title-font mb-8 text-white">R$750</div>
+            <ul class="space-y-4 mb-10 text-white/80 text-xs md:text-sm">
+              <li class="flex items-center gap-2 font-bold">&#x2714; Otimização SEO Local</li>
+              <li class="flex items-center gap-2 font-bold">&#x2714; Até 5 Páginas</li>
+              <li class="flex items-center gap-2 font-bold">&#x2714; Animações Premium</li>
+            </ul>
+            <a href="contato.html" class="block text-center py-4 bg-brand hover:bg-blue-600 text-white rounded-xl transition shadow-xl shadow-brand/30 font-bold text-sm">Escolher Plano</a>
+          </article>
+
+          <article class="bg-white/5 border border-white/10 p-6 md:p-8 rounded-3xl hover:border-brand/50 transition-all group order-3">
+            <div class="text-3xl md:text-4xl mb-6">&#x26A1;</div>
+            <h3 class="title-font text-xl md:text-2xl font-bold mb-2 text-white">Custom</h3>
+            <p class="text-gray-500 mb-6 italic text-xs md:text-sm">Sistemas sob medida.</p>
+            <div class="text-3xl md:text-4xl font-bold title-font mb-8 text-white">R$1.800+</div>
+            <ul class="space-y-4 mb-10 text-gray-400 text-xs md:text-sm">
+              <li class="flex items-center gap-2 font-medium">&#x2714; Painel Adm / Back-end</li>
+              <li class="flex items-center gap-2 font-medium">&#x2714; Banco de Dados</li>
+              <li class="flex items-center gap-2 font-medium">&#x2714; E-commerce Completo</li>
+            </ul>
+            <a href="contato.html" class="block text-center py-3 border border-white/10 rounded-xl hover:bg-white/5 transition font-bold text-sm">Consultar</a>
+          </article>
+        </div>
+
+        <div class="mt-20 md:mt-24">
+          <h3 class="title-font text-lg md:text-xl font-bold mb-8 flex items-center gap-2 italic">
+            <span class="w-8 h-[2px] bg-brand"></span> Comparativo Detalhado
+          </h3>
+          <div class="overflow-x-auto custom-scroll rounded-2xl border border-white/5">
+            <table class="w-full text-left border-collapse min-w-[500px] bg-white/2">
+              <thead>
+                <tr class="border-b border-white/10 text-gray-500 text-[10px] md:text-xs uppercase tracking-widest">
+                  <th class="p-4 md:p-6 font-medium">Recurso</th>
+                  <th class="p-4 md:p-6 font-medium">Essencial</th>
+                  <th class="p-4 md:p-6 font-medium">Business</th>
+                  <th class="p-4 md:p-6 font-medium">Custom</th>
+                </tr>
+              </thead>
+              <tbody class="text-white text-xs md:text-sm italic">
+                <tr class="border-b border-white/5 hover:bg-white/5 transition-colors">
+                  <td class="p-4 md:p-6 font-bold uppercase text-[10px]">Mobile First</td>
+                  <td class="p-4 md:p-6 text-brand font-bold">&#x2705;</td>
+                  <td class="p-4 md:p-6 text-brand font-bold">&#x2705;</td>
+                  <td class="p-4 md:p-6 text-brand font-bold">&#x2705;</td>
+                </tr>
+                <tr class="border-b border-white/5 hover:bg-white/5 transition-colors">
+                  <td class="p-4 md:p-6 font-bold uppercase text-[10px]">SEO (Google)</td>
+                  <td class="p-4 md:p-6 text-gray-400">Básico</td>
+                  <td class="p-4 md:p-6 text-brand font-black">Avançado</td>
+                  <td class="p-4 md:p-6">Estratégico</td>
+                </tr>
+                <tr class="border-b border-white/5 hover:bg-white/5 transition-colors">
+                  <td class="p-4 md:p-6 font-bold uppercase text-[10px]">E-mail Profissional</td>
+                  <td class="p-4 md:p-6 text-red-500/30">&#x274C;</td>
+                  <td class="p-4 md:p-6 text-brand font-bold">&#x2705;</td>
+                  <td class="p-4 md:p-6 text-brand font-bold">&#x2705;</td>
+                </tr>
+                <tr class="hover:bg-white/5 transition-colors">
+                  <td class="p-4 md:p-6 font-bold uppercase text-[10px]">Entrega Estimada</td>
+                  <td class="p-4 md:p-6">7 dias</td>
+                  <td class="p-4 md:p-6">15 dias</td>
+                  <td class="p-4 md:p-6">A combinar</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="max-w-7xl mx-auto px-4 md:px-6 py-16 md:py-24 bg-dark/30 rounded-[2rem] md:rounded-[3rem] border border-white/5">
+        <div class="text-center mb-12 md:mb-16">
+          <span class="text-brand font-bold tracking-widest uppercase text-xs md:text-sm">Metodologia</span>
+          <h2 class="title-font text-3xl md:text-4xl font-bold mt-4 text-white">
+            Como eu <span class="text-brand italic">Trabalho</span>
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 relative text-center md:text-left">
+          <div class="relative z-10 px-4">
+            <div class="title-font text-5xl md:text-6xl font-black text-white/5 mb-4">01</div>
+            <h4 class="text-lg md:text-xl font-bold mb-3 text-white italic">Briefing</h4>
+            <p class="text-gray-400 text-sm md:text-base leading-relaxed">Entendimento total do seu negócio e objetivos reais.</p>
+          </div>
+          <div class="relative z-10 px-4">
+            <div class="title-font text-5xl md:text-6xl font-black text-white/5 mb-4">02</div>
+            <h4 class="text-lg md:text-xl font-bold mb-3 text-white italic">Protótipo</h4>
+            <p class="text-gray-400 text-sm md:text-base leading-relaxed">Criação do visual para sua aprovação antes de qualquer linha de código.</p>
+          </div>
+          <div class="relative z-10 px-4">
+            <div class="title-font text-5xl md:text-6xl font-black text-white/5 mb-4">03</div>
+            <h4 class="text-lg md:text-xl font-bold mb-3 text-white italic">Dev & QA</h4>
+            <p class="text-gray-400 text-sm md:text-base leading-relaxed">Desenvolvimento focado em velocidade extrema e segurança de dados.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-10 md:py-12 border-t border-white/5 text-center text-gray-500 text-[10px] md:text-xs uppercase tracking-[0.3em] italic px-4">
+      &copy; 2026 Caio Silva &#x2022; Desenvolvedor Full Stack &#x2022; Vila Velha, ES
+    </footer>
+  </body>
+</html>

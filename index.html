@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caio Silva | Full Stack Dev</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: "#1d8cf8",
+                        dark: "#0c1220",
+                        darker: "#060a13",
+                    },
+                    fontFamily: {
+                        oxanium: ["Oxanium", "sans-serif"],
+                        dm: ["DM Sans", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        body { font-family: "DM Sans", sans-serif; background-color: #060a13; color: white; }
+        .title-font { font-family: "Oxanium", sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); backdrop-filter: blur(10px); }
+        .custom-scroll::-webkit-scrollbar { width: 4px; height: 4px; }
+        .custom-scroll::-webkit-scrollbar-thumb { background: #1d8cf8; border-radius: 10px; }
+    </style>
+</head>
+<body class="bg-darker text-gray-200 overflow-x-hidden">
+    
+    <nav class="fixed top-0 w-full z-50 bg-dark/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 h-16 md:h-20 flex items-center justify-between">
+            <div class="title-font text-xl md:text-2xl font-extrabold tracking-tighter italic">
+                CAIO<span class="text-brand">.</span>SILVA
+            </div>
+            <div class="hidden md:flex items-center gap-6 lg:gap-8 font-medium text-sm lg:text-base">
+                <a href="#home" class="text-brand">Home</a>
+                <a href="#sobre" class="hover:text-brand transition">Sobre</a>
+                <a href="#academico" class="hover:text-brand transition">Acadêmico</a>
+                <a href="./templates/servicos.html" class="hover:text-brand transition">Serviços</a>
+                <a href="./templates/contato.html" class="bg-brand hover:bg-blue-600 text-white px-5 py-2 rounded-full transition shadow-lg shadow-brand/20">Contato</a>
+            </div>
+            <div class="md:hidden text-brand font-bold text-xs uppercase tracking-widest">Menu</div>
+        </div>
+    </nav>
+
+    <section id="home" class="pt-28 md:pt-40 pb-12 md:pb-20 px-4 md:px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div class="order-2 md:order-1 text-center md:text-left">
+                <span class="text-brand font-bold tracking-widest uppercase text-xs md:text-sm">Olá, eu sou o Caio</span>
+                <h1 class="title-font text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mt-4 mb-6 leading-tight">
+                    Transformando código em <span class="text-brand italic">experiências.</span>
+                </h1>
+                <p class="text-gray-400 text-base md:text-lg leading-relaxed mb-8 max-w-xl mx-auto md:mx-0">
+                    Desenvolvedor Full Stack de Vila Velha, apaixonado por criar soluções que unem design de alto impacto e performance técnica.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#sobre" class="bg-brand px-8 py-4 rounded-xl font-bold hover:bg-blue-600 shadow-xl shadow-brand/20 transition-all text-center">Minha História</a>
+                    <a href="./templates/github.html" class="glass px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition text-center">Ver Projetos</a>
+                </div>
+            </div>
+            <div class="order-1 md:order-2 flex justify-center relative">
+                <div class="absolute inset-0 bg-brand/20 blur-[60px] md:blur-[100px] rounded-full"></div>
+                <img src="./assets/perfil.jpeg" alt="Caio Silva" class="w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-[2.5rem] md:rounded-[3rem] border-2 border-white/10 glass relative z-10 object-cover shadow-2xl" />
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-16 md:py-24 bg-dark/30 border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
+                <div class="lg:col-span-2">
+                    <h2 class="title-font text-2xl md:text-3xl font-bold mb-6 italic text-white underline decoration-brand decoration-4 underline-offset-8">Minha História</h2>
+                    <p class="text-gray-400 leading-relaxed mb-8 text-sm md:text-base text-justify md:text-left">
+                        Iniciei minha jornada na tecnologia motivado pela curiosidade de como as coisas funcionam "por baixo do capô". Há quase 2 anos, transformei essa curiosidade em profissão. Meu objetivo é me tornar um **Arquiteto de Software**, criando sistemas que não apenas funcionam, mas que resolvem problemas reais de forma elegante.
+                    </p>
+
+                    <h3 class="title-font text-lg md:text-xl font-bold mb-4 text-white uppercase tracking-tight italic">Estilo de Vida & Hobbies</h3>
+                    <div class="text-gray-400 mb-8 bg-white/5 p-4 md:p-6 rounded-2xl border border-white/5">
+                        <p class="mb-6 text-sm md:text-base">
+                            Nem só de código vive um dev! Sou atleta de vôlei e de basquete, participo de competições municipais e estaduais. No tempo livre, adoro pedalar, cozinhar e maratonar filmes.
+                        </p>
+                        
+                        <p class="text-brand font-bold text-[10px] md:text-xs uppercase tracking-widest italic border-l-2 border-brand pl-3 mb-4">Frases que me inspiram:</p>
+                        <ol class="list-decimal list-inside space-y-3 pl-1 italic text-xs md:text-sm">
+                            <li>"O código é a tinta, a tela é o mundo — crie algo que valha a pena ver."</li>
+                            <li>"Não se arrependa de algum momento, pois cada um ensina algo importante."</li>
+                            <li>"A vida é extraordinária, cheia de buracos e falhas, mas é bela."</li>
+                            <li>"Odisseia — Entre todas as coisas que nascem, nada nasce mais fraco que o homem"</li>
+                        </ol>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 md:gap-3">
+                        <span class="glass px-3 py-1.5 md:px-4 md:py-2 rounded-full text-[10px] md:text-xs font-bold text-brand italic">&#x1F3D0 Voleibol</span>
+                        <span class="glass px-3 py-1.5 md:px-4 md:py-2 rounded-full text-[10px] md:text-xs font-bold text-gray-300 italic">&#x26F9 Baquete</span>
+                        <span class="glass px-3 py-1.5 md:px-4 md:py-2 rounded-full text-[10px] md:text-xs font-bold text-gray-300 italic">&#x1F6B4 Ciclismo</span>
+                        <span class="glass px-3 py-1.5 md:px-4 md:py-2 rounded-full text-[10px] md:text-xs font-bold text-gray-300 italic">&#x1F37D Cozinhar</span>
+                        <span class="glass px-3 py-1.5 md:px-4 md:py-2 rounded-full text-[10px] md:text-xs font-bold text-gray-300 italic">&#x1F3A5 Filmes</span>
+                    </div>
+                </div>
+
+                <div class="glass p-6 md:p-8 rounded-[2rem] h-fit lg:sticky lg:top-28">
+                    <h2 class="title-font text-xl md:text-2xl font-bold mb-6 text-white border-b border-brand/20 pb-4">Soft Skills</h2>
+                    <ul class="grid grid-cols-2 lg:grid-cols-1 gap-4">
+                        <li class="flex items-center gap-2 text-xs md:text-sm"><span class="w-1.5 h-1.5 bg-brand rounded-full"></span> Resolução de Problemas</li>
+                        <li class="flex items-center gap-2 text-xs md:text-sm"><span class="w-1.5 h-1.5 bg-brand rounded-full"></span> Metodologias Ágeis</li>
+                        <li class="flex items-center gap-2 text-xs md:text-sm"><span class="w-1.5 h-1.5 bg-brand rounded-full"></span> Comunicação Assertiva</li>
+                        <li class="flex items-center gap-2 text-xs md:text-sm"><span class="w-1.5 h-1.5 bg-brand rounded-full"></span> Adaptabilidade</li>
+                        <li class="flex items-center gap-2 text-xs md:text-sm"><span class="w-1.5 h-1.5 bg-brand rounded-full"></span> Aprendizado Autônomo</li>
+                        <li class="flex items-center gap-2 text-xs md:text-sm"><span class="w-1.5 h-1.5 bg-brand rounded-full"></span> Pensamento Lógico</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="academico" class="py-16 md:py-24 px-4 md:px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="title-font text-3xl md:text-4xl font-bold italic text-center mb-12 md:mb-16">Jornada <span class="text-brand">Acadêmica</span></h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 md:gap-12">
+                <div class="lg:col-span-2 space-y-6 md:space-y-8">
+                    <div class="border-l-2 border-brand pl-6 relative">
+                        <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-brand shadow-[0_0_10px_#1d8cf8]"></div>
+                        <h4 class="font-bold text-white uppercase text-xs md:text-sm tracking-widest">Ensino Fundamental & Médio</h4>
+                        <p class="text-gray-500 text-[10px] md:text-xs mb-1 italic">Vila Velha, ES</p>
+                        <p class="text-gray-400 text-xs md:text-sm leading-relaxed">Foco em exatas e feiras de ciências.</p>
+                    </div>
+
+                    <div class="border-l-2 border-brand pl-6 relative">
+                        <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-brand shadow-[0_0_10px_#1d8cf8]"></div>
+                        <h4 class="font-bold text-white uppercase text-xs md:text-sm tracking-widest">Graduação em ADS</h4>
+                        <p class="text-brand text-[10px] md:text-xs mb-1 font-bold italic">UVV · 2025 - 2027</p>
+                        <p class="text-gray-400 text-xs md:text-sm leading-relaxed">Atualmente no 3º semestre.</p>
+                    </div>
+
+                    <div class="bg-brand/10 p-5 rounded-2xl border border-brand/20 italic">
+                        <h4 class="title-font font-bold text-brand mb-2 italic text-sm md:text-base">Planos para o Futuro &#x1F680</h4>
+                        <p class="text-[11px] md:text-sm text-gray-300 leading-relaxed text-justify">
+                            Evoluir para liderança técnica como Arquiteto de Software e cursar Engenharia de Software para aprimorar o impacto das minhas soluções.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-3 glass rounded-3xl overflow-hidden shadow-2xl flex flex-col max-h-[500px]">
+                    <div class="bg-brand/10 p-4 border-b border-white/10 sticky top-0 z-20">
+                         <h3 class="title-font text-[10px] md:text-xs font-black uppercase text-brand tracking-widest italic text-center lg:text-left">Grade Curricular UVV</h3>
+                    </div>
+                    <div class="overflow-auto custom-scroll">
+                        <table class="w-full text-left min-w-[400px]">
+                            <tbody class="text-[10px] md:text-xs lg:text-sm">
+                                <tr class="border-b border-white/5 hover:bg-white/5 transition">
+                                    <td class="p-4 md:p-6 font-bold text-white w-1/4">POO</td>
+                                    <td class="p-4 md:p-6 text-gray-400 italic leading-relaxed">Modelagem baseada no mundo real (Java/C#), abrangendo abstração, encapsulamento, herança e polimorfismo.</td>
+                                </tr>
+                                <tr class="border-b border-white/5 hover:bg-white/5 transition">
+                                    <td class="p-4 md:p-6 font-bold text-white">Bancos de Dados II</td>
+                                    <td class="p-4 md:p-6 text-gray-400 italic leading-relaxed">PL/SQL, Triggers, ACID e introdução ao NoSQL.</td>
+                                </tr>
+                                <tr class="border-b border-white/5 hover:bg-white/5 transition">
+                                    <td class="p-4 md:p-6 font-bold text-white">IA e Chatbots</td>
+                                    <td class="p-4 md:p-6 text-gray-400 italic leading-relaxed">Estudo de PLN, integração de LLMs e construção de conversação.</td>
+                                </tr>
+                                <tr class="hover:bg-white/5 transition">
+                                    <td class="p-4 md:p-6 font-bold text-white">Construção de Software para Web</td>
+                                    <td class="p-4 md:p-6 text-gray-400 italic leading-relaxed">Full Stack (HTML/CSS/JS + Back-end) e APIs REST.</td>
+                                </tr>
+                               <tr class="border-b border-white/5 hover:bg-white/5 transition">
+                                  <td class="p-4 md:p-6 font-bold text-white">Engenharia de Software II</td>
+                                  <td class="p-4 md:p-6 text-gray-400 italic leading-relaxed text-xs md:text-sm">
+                                      Foco em qualidade de software, testes automatizados e gestão ágil de projetos utilizando Scrum e Kanban.
+                                  </td>
+                                </tr>
+                                <tr class="border-b border-white/5 hover:bg-white/5 transition">
+                                    <td class="p-4 md:p-6 font-bold text-white">Empreendedorismo e Negócios</td>
+                                    <td class="p-4 md:p-6 text-gray-400 italic leading-relaxed text-xs md:text-sm">
+                                        Criação de modelos de negócios inovadores (Canvas), validação de MVPs e estratégias de inserção no mercado tech.
+                                    </td>
+                                </tr>
+                                <tr class="hover:bg-white/5 transition">
+                                    <td class="p-4 md:p-6 font-bold text-white">Inovação e Design Thinking</td>
+                                    <td class="p-4 md:p-6 text-gray-400 italic leading-relaxed text-xs md:text-sm">
+                                        Resolução de problemas complexos com foco no usuário, utilizando empatia, ideação e prototipagem rápida.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-brand/5 border-t border-white/5">
+        <div class="max-w-4xl mx-auto px-4 md:px-6 text-center">
+            <h2 class="title-font text-2xl md:text-3xl font-bold mb-10 md:mb-12 italic">Participações e <span class="text-brand">Eventos</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 text-left">
+                <div class="glass p-6 md:p-8 rounded-2xl hover:border-brand/50 transition-all">
+                    <h4 class="font-bold text-white italic text-lg md:text-xl mb-1">ESX</h4>
+                    <p class="text-[10px] text-brand mb-3 uppercase font-black tracking-widest">Workshop & Networking</p>
+                    <p class="text-xs md:text-sm text-gray-500 italic leading-relaxed">Inovação tecnológica e conexões com o mercado capixaba.</p>
+                </div>
+                <div class="glass p-6 md:p-8 rounded-2xl hover:border-brand/50 transition-all">
+                    <h4 class="font-bold text-white italic text-lg md:text-xl mb-1">Inovaweek</h4>
+                    <p class="text-[10px] text-brand mb-3 uppercase font-black tracking-widest">Expositor de Ideias</p>
+                    <p class="text-xs md:text-sm text-gray-500 italic leading-relaxed">Exploração de projetos de vanguarda desenvolvidos na UVV.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 md:py-12 border-t border-white/5 text-center text-gray-500 text-[9px] md:text-[10px] uppercase tracking-[0.3em] italic px-4">
+        &copy; 2026 CAIO SILVA • UVV ADS • VILA VELHA, ES
+    </footer>
+
+</body>
+</html>
