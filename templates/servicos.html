@@ -46,19 +46,32 @@
   </head>
   <body class="bg-darker text-gray-200 overflow-x-hidden">
     <nav class="fixed top-0 w-full z-50 bg-dark/80 backdrop-blur-md border-b border-white/10">
-      <div class="max-w-7xl mx-auto px-4 md:px-6 h-16 md:h-20 flex items-center justify-between">
-        <div class="title-font text-xl md:text-2xl font-extrabold tracking-tighter italic">
-          CAIO<span class="text-brand">.</span>SILVA
+    <nav class="fixed top-0 w-full z-50 bg-dark/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 h-16 md:h-20 flex items-center justify-between">
+            <div class="title-font text-xl md:text-2xl font-extrabold tracking-tighter italic">
+                <a href="index.html">CAIO<span class="text-brand">.</span>SILVA</a>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-6 lg:gap-8 font-medium text-sm lg:text-base">
+                <a href="../index.html" class="text-brand">Home</a>
+                <a href="./github.html" class="hover:text-brand transition">GitHub</a>
+                <a href="./curriculo.html" class="hover:text-brand transition">Acadêmico</a>
+                <a href="./servicos.html" class="hover:text-brand transition">Serviços</a>
+                <a href="./contato.html" class="bg-brand hover:bg-blue-600 text-white px-5 py-2 rounded-full transition shadow-lg shadow-brand/20">Contato</a>
+            </div>
+
+            <button id="menuBtn" class="md:hidden text-brand font-bold text-xs uppercase tracking-widest border border-brand/20 px-3 py-1 rounded">
+                &#x2630; Menu
+            </button>
         </div>
-        <div class="hidden md:flex items-center gap-6 lg:gap-8 font-medium text-sm">
-          <a href="../index.html" class="hover:text-brand transition">Home</a>
-          <a href="curriculo.html" class="hover:text-brand transition">Currículo</a>
-          <a href="github.html" class="hover:text-brand transition">GitHub</a>
-          <a href="servicos.html" class="text-brand">Serviços</a>
-          <a href="contato.html" class="bg-brand hover:bg-blue-600 text-white px-5 py-2 rounded-full transition shadow-lg shadow-brand/20">Contato</a>
+
+        <div id="mobileMenu" class="hidden md:hidden bg-dark border-b border-white/10 p-6 flex flex-col gap-4 italic text-sm">
+            <a href="../index.html" class="hover:text-brand">Home</a>
+            <a href="./github.html" class="hover:text-brand">GitHub</a>
+            <a href="./curriculo.html" class="hover:text-brand">Acadêmico</a>
+            <a href="./servicos.html" class="hover:text-brand">Serviços</a>
+            <a href="./contato.html" class="text-brand">Contato</a>
         </div>
-        <div class="md:hidden text-brand text-[10px] font-bold uppercase tracking-widest">Menu</div>
-      </div>
     </nav>
 
     <main class="pt-24 md:pt-32 pb-20">
@@ -193,5 +206,22 @@
     <footer class="py-10 md:py-12 border-t border-white/5 text-center text-gray-500 text-[10px] md:text-xs uppercase tracking-[0.3em] italic px-4">
       &copy; 2026 Caio Silva &#x2022; Desenvolvedor Full Stack &#x2022; Vila Velha, ES
     </footer>
+
+       <script>
+        const btn = document.getElementById('menuBtn');
+        const menu = document.getElementById('mobileMenu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Fecha o menu ao clicar em qualquer link (bom para mobile)
+        const links = menu.querySelectorAll('a');
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
@@ -63,28 +63,62 @@
   </head>
   <body class="bg-darker text-gray-200 overflow-x-hidden">
     <nav
-      class="no-print fixed top-0 w-full z-50 bg-dark/80 backdrop-blur-md border-b border-white/10"
+      class="fixed top-0 w-full z-50 bg-dark/80 backdrop-blur-md border-b border-white/10"
     >
       <div
-        class="max-w-7xl mx-auto px-6 h-16 md:h-20 flex items-center justify-between"
+        class="max-w-7xl mx-auto px-4 md:px-6 h-16 md:h-20 flex items-center justify-between"
       >
         <div
-          class="title-font text-xl md:text-2xl font-extrabold tracking-tighter italic text-white"
+          class="title-font text-xl md:text-2xl font-extrabold tracking-tighter italic"
         >
-          CAIO<span class="text-brand">.</span>SILVA
+          <a href="index.html">CAIO<span class="text-brand">.</span>SILVA</a>
         </div>
-        <div class="hidden md:flex items-center gap-6 lg:gap-8 font-medium text-white text-sm">
-          <a href="../index.html" class="hover:text-brand transition">Home</a>
-          <a href="curriculo.html" class="text-brand">Currículo</a>
-          <a href="github.html" class="hover:text-brand transition">GitHub</a>
-          <a href="servicos.html" class="hover:text-brand transition">Serviços</a>
+
+        <div
+          class="hidden md:flex items-center gap-6 lg:gap-8 font-medium text-sm lg:text-base"
+        >
+          <a href="../index.html" class="text-brand">Home</a>
+          <a href="./github.html" class="hover:text-brand transition"
+            >GitHub</a
+          >
           <a
-            href="contato.html"
-            class="bg-brand hover:bg-blue-600 px-5 py-2 rounded-full transition"
+            href="./curriculo.html"
+            class="hover:text-brand transition"
+            >Acadêmico</a
+          >
+          <a
+            href="./servicos.html"
+            class="hover:text-brand transition"
+            >Serviços</a
+          >
+          <a
+            href="./contato.html"
+            class="bg-brand hover:bg-blue-600 text-white px-5 py-2 rounded-full transition shadow-lg shadow-brand/20"
             >Contato</a
           >
         </div>
-        <div class="md:hidden text-brand text-[10px] font-bold uppercase tracking-widest">Menu</div>
+
+        <button
+          id="menuBtn"
+          class="md:hidden text-brand font-bold text-xs uppercase tracking-widest border border-brand/20 px-3 py-1 rounded"
+        >
+          &#x2630; Menu
+        </button>
+      </div>
+
+      <div
+        id="mobileMenu"
+        class="hidden md:hidden bg-dark border-b border-white/10 p-6 flex flex-col gap-4 italic text-sm"
+      >
+        <a href="../index.html" class="hover:text-brand">Home</a>
+        <a href="./github.html" class="hover:text-brand">GitHub</a>
+        <a href="./curriculo.html" class="hover:text-brand"
+          >Acadêmico</a
+        >
+        <a href="./servicos.html" class="hover:text-brand"
+          >Serviços</a
+        >
+        <a href="./contato.html" class="text-brand">Contato</a>
       </div>
     </nav>
 
@@ -104,22 +138,32 @@
           />
 
           <div class="flex-1">
-            <h1 class="title-font text-3xl md:text-4xl font-bold text-white mb-2">
+            <h1
+              class="title-font text-3xl md:text-4xl font-bold text-white mb-2"
+            >
               Caio Silva
             </h1>
-            <div class="text-brand text-xs md:text-sm font-medium mb-6 italic leading-relaxed">
+            <div
+              class="text-brand text-xs md:text-sm font-medium mb-6 italic leading-relaxed"
+            >
               Desenvolvedor Full Stack · ADS @ Vila Velha University (UVV)
             </div>
             <div
               class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs md:text-sm text-gray-400 italic"
             >
-              <span class="flex items-center gap-2 justify-center md:justify-start">
+              <span
+                class="flex items-center gap-2 justify-center md:justify-start"
+              >
                 &#x1F4E9; caiosilvage05@gmail.com
               </span>
-              <span class="flex items-center gap-2 justify-center md:justify-start">
+              <span
+                class="flex items-center gap-2 justify-center md:justify-start"
+              >
                 &#x1F4F2; (27) 996012266
               </span>
-              <span class="flex items-center gap-2 justify-center md:justify-start">
+              <span
+                class="flex items-center gap-2 justify-center md:justify-start"
+              >
                 &#x1F4CD; Vila Velha, ES
               </span>
               <a
@@ -128,7 +172,9 @@
                 class="flex items-center gap-2 justify-center md:justify-start hover:text-brand transition-colors"
               >
                 <span>&#x1F517;</span>
-                <span class="underline decoration-brand/30 underline-offset-4">github.com/Caio-Silva455</span>
+                <span class="underline decoration-brand/30 underline-offset-4"
+                  >github.com/Caio-Silva455</span
+                >
               </a>
             </div>
           </div>
@@ -144,38 +190,69 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           <div class="space-y-10 md:space-y-12">
             <section>
-              <h3 class="title-font text-brand font-bold uppercase tracking-widest text-[11px] md:text-sm mb-6 flex items-center gap-2">
+              <h3
+                class="title-font text-brand font-bold uppercase tracking-widest text-[11px] md:text-sm mb-6 flex items-center gap-2"
+              >
                 <span class="w-4 h-[1px] bg-brand"></span> Skillset
               </h3>
               <div class="flex flex-wrap gap-2">
-                <span class="bg-brand/10 border border-brand/20 text-brand text-[9px] md:text-[10px] px-3 py-1 rounded-full font-bold uppercase">React</span>
-                <span class="bg-brand/10 border border-brand/20 text-brand text-[9px] md:text-[10px] px-3 py-1 rounded-full font-bold uppercase">Java</span>
-                <span class="bg-brand/10 border border-brand/20 text-brand text-[9px] md:text-[10px] px-3 py-1 rounded-full font-bold uppercase">Angular</span>
-                <span class="bg-white/5 border border-white/10 text-gray-300 text-[9px] md:text-[10px] px-3 py-1 rounded-full font-bold uppercase">Node.js</span>
-                <span class="bg-white/5 border border-white/10 text-gray-300 text-[9px] md:text-[10px] px-3 py-1 rounded-full font-bold uppercase">PostgreSQL</span>
-                <span class="bg-white/5 border border-white/10 text-gray-300 text-[9px] md:text-[10px] px-3 py-1 rounded-full font-bold uppercase">Docker</span>
-                <span class="bg-white/5 border border-white/10 text-gray-300 text-[9px] md:text-[10px] px-3 py-1 rounded-full font-bold uppercase">Tailwind</span>
+                <span
+                  class="bg-brand/10 border border-brand/20 text-brand text-[9px] md:text-[10px] px-3 py-1 rounded-full font-bold uppercase"
+                  >React</span
+                >
+                <span
+                  class="bg-brand/10 border border-brand/20 text-brand text-[9px] md:text-[10px] px-3 py-1 rounded-full font-bold uppercase"
+                  >Java</span
+                >
+                <span
+                  class="bg-brand/10 border border-brand/20 text-brand text-[9px] md:text-[10px] px-3 py-1 rounded-full font-bold uppercase"
+                  >Angular</span
+                >
+                <span
+                  class="bg-white/5 border border-white/10 text-gray-300 text-[9px] md:text-[10px] px-3 py-1 rounded-full font-bold uppercase"
+                  >Node.js</span
+                >
+                <span
+                  class="bg-white/5 border border-white/10 text-gray-300 text-[9px] md:text-[10px] px-3 py-1 rounded-full font-bold uppercase"
+                  >PostgreSQL</span
+                >
+                <span
+                  class="bg-white/5 border border-white/10 text-gray-300 text-[9px] md:text-[10px] px-3 py-1 rounded-full font-bold uppercase"
+                  >Docker</span
+                >
+                <span
+                  class="bg-white/5 border border-white/10 text-gray-300 text-[9px] md:text-[10px] px-3 py-1 rounded-full font-bold uppercase"
+                  >Tailwind</span
+                >
               </div>
             </section>
 
             <section>
-              <h3 class="title-font text-brand font-bold uppercase tracking-widest text-[11px] md:text-sm mb-6 flex items-center gap-2">
+              <h3
+                class="title-font text-brand font-bold uppercase tracking-widest text-[11px] md:text-sm mb-6 flex items-center gap-2"
+              >
                 <span class="w-4 h-[1px] bg-brand"></span> Idiomas
               </h3>
               <div class="space-y-4">
                 <div>
                   <div class="text-xs md:text-sm font-bold">Português</div>
-                  <div class="text-[10px] md:text-xs text-gray-500 italic">Nativo</div>
+                  <div class="text-[10px] md:text-xs text-gray-500 italic">
+                    Nativo
+                  </div>
                 </div>
                 <div>
                   <div class="text-xs md:text-sm font-bold">Inglês</div>
-                  <div class="text-[10px] md:text-xs text-gray-500 italic">Intermediário (Leitura Técnica)</div>
+                  <div class="text-[10px] md:text-xs text-gray-500 italic">
+                    Intermediário (Leitura Técnica)
+                  </div>
                 </div>
               </div>
             </section>
 
             <section>
-              <h3 class="title-font text-brand font-bold uppercase tracking-widest text-[11px] md:text-sm mb-6 flex items-center gap-2">
+              <h3
+                class="title-font text-brand font-bold uppercase tracking-widest text-[11px] md:text-sm mb-6 flex items-center gap-2"
+              >
                 <span class="w-4 h-[1px] bg-brand"></span> Certificações
               </h3>
               <ul class="space-y-4">
@@ -188,7 +265,9 @@
                   <div class="text-[10px] text-gray-500">Furukawa · 80h</div>
                 </li>
                 <li class="border-l-2 border-white/5 pl-4 py-1">
-                  <div class="text-xs font-bold">Práticas Bancárias e Gestão</div>
+                  <div class="text-xs font-bold">
+                    Práticas Bancárias e Gestão
+                  </div>
                   <div class="text-[10px] text-gray-500">CTA · 120h</div>
                 </li>
               </ul>
@@ -197,84 +276,132 @@
 
           <div class="md:col-span-2 space-y-12 md:space-y-16">
             <section>
-              <h2 class="title-font text-xl md:text-2xl font-bold mb-6 text-white italic border-b border-white/5 pb-2">
+              <h2
+                class="title-font text-xl md:text-2xl font-bold mb-6 text-white italic border-b border-white/5 pb-2"
+              >
                 Objetivo
               </h2>
-              <p class="text-sm md:text-base text-gray-400 leading-relaxed italic text-justify">
+              <p
+                class="text-sm md:text-base text-gray-400 leading-relaxed italic text-justify"
+              >
                 Desenvolvedor Full Stack em evolução, focado no ecossistema
-                <span class="text-white font-medium">Java/React</span>. Busco aplicar meus
-                conhecimentos técnicos em projetos desafiadores, unindo a base
-                sólida da graduação com a experiência prática de freelance para
-                criar soluções eficientes e escaláveis.
+                <span class="text-white font-medium">Java/React</span>. Busco
+                aplicar meus conhecimentos técnicos em projetos desafiadores,
+                unindo a base sólida da graduação com a experiência prática de
+                freelance para criar soluções eficientes e escaláveis.
               </p>
             </section>
 
             <section>
-              <h2 class="title-font text-xl md:text-2xl font-bold mb-8 text-white italic border-b border-white/5 pb-2">
+              <h2
+                class="title-font text-xl md:text-2xl font-bold mb-8 text-white italic border-b border-white/5 pb-2"
+              >
                 Educação
               </h2>
               <div class="space-y-8">
                 <div class="relative pl-8 border-l border-white/10">
-                  <div class="absolute -left-[5px] top-0 w-2 h-2 rounded-full bg-brand"></div>
-                  <h4 class="text-sm md:text-base font-bold text-white uppercase tracking-tight">
+                  <div
+                    class="absolute -left-[5px] top-0 w-2 h-2 rounded-full bg-brand"
+                  ></div>
+                  <h4
+                    class="text-sm md:text-base font-bold text-white uppercase tracking-tight"
+                  >
                     Análise e Desenvolvimento de Sistemas
                   </h4>
-                  <div class="text-brand text-[10px] md:text-xs font-bold mb-2 uppercase tracking-widest">
+                  <div
+                    class="text-brand text-[10px] md:text-xs font-bold mb-2 uppercase tracking-widest"
+                  >
                     UVV · 2025 - 2027
                   </div>
                   <p class="text-gray-400 text-xs md:text-sm">
-                    Foco em engenharia de software, arquitetura de sistemas e metodologias ágeis.
+                    Foco em engenharia de software, arquitetura de sistemas e
+                    metodologias ágeis.
                   </p>
                 </div>
               </div>
             </section>
 
             <section>
-              <h2 class="title-font text-xl md:text-2xl font-bold mb-8 text-white italic border-b border-white/5 pb-2">
+              <h2
+                class="title-font text-xl md:text-2xl font-bold mb-8 text-white italic border-b border-white/5 pb-2"
+              >
                 Experiência Profissional
               </h2>
               <div class="space-y-10">
                 <div class="relative pl-8 border-l border-white/10">
-                  <div class="absolute -left-[5px] top-0 w-2 h-2 rounded-full bg-brand shadow-[0_0_10px_#1d8cf8]"></div>
-                  <h4 class="text-sm md:text-base font-bold text-white uppercase tracking-tight">
+                  <div
+                    class="absolute -left-[5px] top-0 w-2 h-2 rounded-full bg-brand shadow-[0_0_10px_#1d8cf8]"
+                  ></div>
+                  <h4
+                    class="text-sm md:text-base font-bold text-white uppercase tracking-tight"
+                  >
                     Desenvolvedor Full Stack (Freelance)
                   </h4>
-                  <div class="text-brand text-[10px] md:text-xs font-bold mb-3 uppercase tracking-widest">
+                  <div
+                    class="text-brand text-[10px] md:text-xs font-bold mb-3 uppercase tracking-widest"
+                  >
                     2024 - Atual
                   </div>
-                  <p class="text-gray-400 text-xs md:text-sm leading-relaxed mb-4">
-                    Desenvolvimento de soluções personalizadas para empresas locais, integrando interfaces modernas com backends robustos.
+                  <p
+                    class="text-gray-400 text-xs md:text-sm leading-relaxed mb-4"
+                  >
+                    Desenvolvimento de soluções personalizadas para empresas
+                    locais, integrando interfaces modernas com backends
+                    robustos.
                   </p>
                   <div class="flex flex-wrap gap-2">
-                    <span class="text-[9px] border border-white/10 px-2 py-0.5 rounded uppercase text-gray-500">Spring Boot</span>
-                    <span class="text-[9px] border border-white/10 px-2 py-0.5 rounded uppercase text-gray-500">React</span>
-                    <span class="text-[9px] border border-white/10 px-2 py-0.5 rounded uppercase text-gray-500">TypeScript</span>
+                    <span
+                      class="text-[9px] border border-white/10 px-2 py-0.5 rounded uppercase text-gray-500"
+                      >Spring Boot</span
+                    >
+                    <span
+                      class="text-[9px] border border-white/10 px-2 py-0.5 rounded uppercase text-gray-500"
+                      >React</span
+                    >
+                    <span
+                      class="text-[9px] border border-white/10 px-2 py-0.5 rounded uppercase text-gray-500"
+                      >TypeScript</span
+                    >
                   </div>
                 </div>
 
                 <div class="relative pl-8 border-l border-white/10">
-                  <div class="absolute -left-[5px] top-0 w-2 h-2 rounded-full bg-white/20"></div>
-                  <h4 class="text-sm md:text-base font-bold text-white uppercase tracking-tight">
+                  <div
+                    class="absolute -left-[5px] top-0 w-2 h-2 rounded-full bg-white/20"
+                  ></div>
+                  <h4
+                    class="text-sm md:text-base font-bold text-white uppercase tracking-tight"
+                  >
                     Professor de Matemática (Maple Bear)
                   </h4>
-                  <div class="text-gray-500 text-[10px] md:text-xs font-bold mb-3 uppercase tracking-widest">
+                  <div
+                    class="text-gray-500 text-[10px] md:text-xs font-bold mb-3 uppercase tracking-widest"
+                  >
                     Experiência Anterior
                   </div>
                   <p class="text-gray-400 text-xs md:text-sm leading-relaxed">
-                    Uso do Soroban para desenvolvimento de raciocínio lógico e resolução de problemas.
+                    Uso do Soroban para desenvolvimento de raciocínio lógico e
+                    resolução de problemas.
                   </p>
                 </div>
 
                 <div class="relative pl-8 border-l border-white/10">
-                  <div class="absolute -left-[5px] top-0 w-2 h-2 rounded-full bg-white/20"></div>
-                  <h4 class="text-sm md:text-base font-bold text-white uppercase tracking-tight">
+                  <div
+                    class="absolute -left-[5px] top-0 w-2 h-2 rounded-full bg-white/20"
+                  ></div>
+                  <h4
+                    class="text-sm md:text-base font-bold text-white uppercase tracking-tight"
+                  >
                     Suporte em TI (AMS Tecnologia)
                   </h4>
-                  <div class="text-gray-500 text-[10px] md:text-xs font-bold mb-3 uppercase tracking-widest">
+                  <div
+                    class="text-gray-500 text-[10px] md:text-xs font-bold mb-3 uppercase tracking-widest"
+                  >
                     Experiência Anterior
                   </div>
                   <p class="text-gray-400 text-xs md:text-sm leading-relaxed">
-                    Infraestrutura de rede, manutenção de sistemas e suporte especializado.
+                    Infraestrutura de rede, manutenção de sistemas e suporte
+                    especializado.
                   </p>
                 </div>
               </div>
@@ -284,8 +411,27 @@
       </div>
     </main>
 
-    <footer class="no-print py-12 border-t border-white/5 text-center text-gray-500 text-[10px] md:text-xs uppercase tracking-[0.3em] italic">
+    <footer
+      class="no-print py-12 border-t border-white/5 text-center text-gray-500 text-[10px] md:text-xs uppercase tracking-[0.3em] italic"
+    >
       Gerado via Caio Silva Portfólio &#x2022; 2026
     </footer>
+
+     <script>
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+
+    btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
+
+    // Fecha o menu ao clicar em qualquer link (bom para mobile)
+    const links = menu.querySelectorAll('a');
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            menu.classList.add('hidden');
+        });
+    });
+</script>
   </body>
 </html>
